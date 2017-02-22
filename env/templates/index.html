@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World's countries</title>
+</head>
+<body>
+    <table>
+        <th>Name</th>
+        <th>Continent</th>
+        <th>Region</th>
+        <th>Subregion</th>
+        {% for country in countries %}
+            <td>{{ countries[country]['name']['common']}}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        {% endfor %}
+    </table>
+</body>
+</html>
